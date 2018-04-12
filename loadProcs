@@ -1,0 +1,5 @@
+# load stored procs to mySQL local database
+# "mysql" -> alias defined in ~/.bash_profile as 'mysql -uroot -p<password>'
+mysql -uroot -pmysql < GetAllUpdate.sql
+mysql -uroot -pmysql < GetAllProducts.sql
+mysql -uroot -pmysql < GetAllError.sql
