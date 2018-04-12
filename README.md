@@ -69,9 +69,8 @@ Als-MacBook-Pro:redis-4.0.9 alcurry$ redis-server
 150:C 11 Apr 13:54:40.022 * DB saved on disk
 93900:M 11 Apr 13:54:40.117 * Background saving terminated with success
 ```
-During the init process you will be prompted to add a GitHub repository. Now would be a good time to make a new project on GitHub. Add the repo link to your package.json when prompted.
 
-## to use Redis client, for entering commands, such as HMSET, HGETALL, or DEL
+## To use Redis client, for entering commands, such as HMSET, HGETALL, or DEL
 ```
 redis-cli
 [this prompt should appear, allowing input: 127.0.0.1:6379>]
@@ -91,4 +90,4 @@ localhost:3000
 
 ```
 
-App is an updated version https://github.com/bradtraversy/redusers.
+App is an updated version of github.com/bradtraversy/redusers.
