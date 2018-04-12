@@ -21,7 +21,26 @@
   The repo includes the demo'd stored procedures, the Redis App,
   and several screen shots illustrating its use.
 
+## MySQL stored procedure set up and execution
+(assumes an alias set up such as **alias mysql='mysql -uroot -pmysql'** in *~/.bash_profile*)
 
+1. create database and insert data
+```
+mysql < schema.sql 
+```
+2. load stored procedures (by design, this script loads 2 successfully, the 3rd with an error) 
+```
+./loadProcs 
+```
+3. execute stored procedures 
+```
+mysql
+source ./execProc1
+source ./execProc2
+```
+4. see the resulting data in the table bamazon.products, either with mysql CLI or with a GUI such as MySQL Workbench.
+5. Note that execProc1 executes GetAllProducts, which takes a parameter to select all products for a specific department
+6. Note that execProc2 executes GetAllUpdate, which takes parameters department & increase.  All prices in the specified department are increased by the value increase, and all prices in the 'clothing' department are increased by 10%.  Then all products are returned, reflecting these updates.
 
 ## Installing Redis db on MAC OS - server & client
 ```
